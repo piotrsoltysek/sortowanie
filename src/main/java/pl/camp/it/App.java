@@ -42,6 +42,10 @@ public class App {
 
         System.out.println(pets);
 
-        
+        Collections.sort(pets, new PorownywaczZwierzat());
+
+        Collections.sort(pets, new PorownywaczZwierzatPoImieniu());
+
+
     }
 }
