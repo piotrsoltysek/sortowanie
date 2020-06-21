@@ -1,0 +1,5 @@
+Car;1;BMW;3;gtjoitrj;false
+Car;2;Toyota;Corolla;gretgtrs;true
+Car;3;Ford;Focus;ffef;false
+Bus;4;Solaris;152;ergregregeg;false;40;6
+Bus;5;Solaris;A100;trrtsg;true;45;6

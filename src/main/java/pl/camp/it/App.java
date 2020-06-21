@@ -2,6 +2,7 @@ package pl.camp.it;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class App {
@@ -19,7 +20,6 @@ public class App {
         Collections.sort(lista);
 
         System.out.println(lista);
-
 
         List<Car> cars = new ArrayList<>();
 
@@ -44,8 +44,15 @@ public class App {
 
         Collections.sort(pets, new PorownywaczZwierzat());
 
-        Collections.sort(pets, new PorownywaczZwierzatPoImieniu());
+        System.out.println(pets);
 
+        Collections.sort(pets, new Comparator<Pet>() {
+            @Override
+            public int compare(Pet o1, Pet o2) {
+                return o1.getName().compareTo(o2.getName());
+            }
+        });
 
+        System.out.println(pets);
     }
 }
