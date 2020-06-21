@@ -33,5 +33,15 @@ public class App {
         Collections.sort(cars);
 
         System.out.println(cars);
+
+        List<Pet> pets = new ArrayList<>();
+
+        pets.add(new Pet(10, "Reksio"));
+        pets.add(new Pet(4, "Mruczek"));
+        pets.add(new Pet(6, "Rex"));
+
+        System.out.println(pets);
+
+        
     }
 }
